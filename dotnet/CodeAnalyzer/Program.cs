@@ -61,11 +61,10 @@ class Program
         var result = new AnalysisResult
         {
             ProjectPath = Path.GetFileName(path.TrimEnd(Path.DirectorySeparatorChar)) ?? path,
-            AnalyzedAt = DateTime.UtcNow,
-            Files = files
+            AnalyzedAt = DateTime.UtcNow
         };
-        foreach (var d in allDuplicates)
-            result.Duplicates.Add(d);
+        result.Files.AddRange(files);
+        result.Duplicates.AddRange(allDuplicates);
 
         string report;
         string defaultName;

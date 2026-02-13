@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Code Quality Report - .</title>
+<style>
+
+body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; padding: 24px; background: #0f0f12; color: #e4e4e7; }
+h1 { color: #fafafa; font-weight: 600; }
+h2 { color: #a1a1aa; margin-top: 32px; font-size: 1.1rem; }
+table { border-collapse: collapse; width: 100%; margin-top: 12px; }
+th, td { border: 1px solid #27272a; padding: 10px 12px; text-align: left; }
+th { background: #18181b; color: #a1a1aa; font-weight: 600; }
+tr:nth-child(even) { background: #18181b; }
+.bad { color: #f87171; }
+.warn { color: #fbbf24; }
+.good { color: #4ade80; }
+.summary { display: flex; gap: 24px; flex-wrap: wrap; margin: 20px 0; }
+.summary .card { background: #18181b; border: 1px solid #27272a; border-radius: 8px; padding: 16px 24px; min-width: 140px; }
+.summary .card .value { font-size: 1.5rem; font-weight: 700; }
+pre { background: #18181b; padding: 12px; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; }
+
+</style>
+</head>
+<body>
+<h1>Code Quality Report</h1>
+<p>Project: <code>.</code></p>
+<p>Generated: 2026-02-13 17:58:48</p>
+<div class="summary">
+<div class="card"><span class="value">6</span><br>Files</div>
+<div class="card"><span class="value">17</span><br>Methods</div>
+<div class="card"><span class="value">85</span><br>Total Cyclomatic Complexity</div>
+<div class="card"><span class="value good">72.1</span><br>Avg Maintainability</div>
+<div class="card"><span class="value">34</span><br>Duplicate Groups</div>
+</div>
+<h2>File &amp; Method Metrics</h2>
+<table>
+<thead><tr><th>File</th><th>Lines</th><th>Code</th><th>File CC</th><th>File MI</th><th>Method</th><th>Method CC</th><th>LOC</th><th>Method MI</th></tr></thead>
+<tbody>
+<tr>
+<td rowspan="2">dotnet\CodeAnalyzer\CSharpAnalyzer.cs</td><td rowspan="2">103</td><td rowspan="2">90</td><td rowspan="2">13</td><td rowspan="2" class="warn">60.7</td>
+<td>AnalyzeDirectory</td><td class="good">5</td><td>21</td><td class="good">68.0</td></tr>
+<tr>
+<td>AnalyzeSource</td><td class="good">8</td><td>69</td><td class="warn">53.5</td></tr>
+<tr>
+<td rowspan="4">dotnet\CodeAnalyzer\DuplicationDetector.cs</td><td rowspan="4">127</td><td rowspan="4">107</td><td rowspan="4">17</td><td rowspan="4" class="good">72.8</td>
+<td>DetectDuplicates</td><td class="good">7</td><td>45</td><td class="warn">58.5</td></tr>
+<tr>
+<td>DetectByNormalizedLines</td><td class="good">6</td><td>47</td><td class="warn">60.2</td></tr>
+<tr>
+<td>NormalizeLine</td><td class="good">3</td><td>5</td><td class="good">82.4</td></tr>
+<tr>
+<td>HashString</td><td class="good">1</td><td>3</td><td class="good">90.1</td></tr>
+<tr><td>dotnet\CodeAnalyzer\Models.cs</td><td>48</td><td>42</td><td>0</td><td class="good">100.0</td><td colspan="4">—</td></tr>
+<tr>
+<td rowspan="1">dotnet\CodeAnalyzer\Program.cs</td><td rowspan="1">89</td><td rowspan="1">78</td><td rowspan="1">17</td><td rowspan="1" class="warn">34.4</td>
+<td>Main</td><td class="bad">17</td><td>80</td><td class="warn">34.4</td></tr>
+<tr>
+<td rowspan="6">dotnet\CodeAnalyzer\ReportGenerator.cs</td><td rowspan="6">136</td><td rowspan="6">125</td><td rowspan="6">23</td><td rowspan="6" class="good">79.2</td>
+<td>GenerateCsv</td><td class="good">6</td><td>26</td><td class="warn">64.5</td></tr>
+<tr>
+<td>GenerateHtml</td><td class="good">8</td><td>82</td><td class="warn">52.2</td></tr>
+<tr>
+<td>CcClass</td><td class="good">3</td><td>5</td><td class="good">82.4</td></tr>
+<tr>
+<td>MiClass</td><td class="good">3</td><td>5</td><td class="good">82.4</td></tr>
+<tr>
+<td>Escape</td><td class="good">2</td><td>1</td><td class="good">96.0</td></tr>
+<tr>
+<td>EscapeHtml</td><td class="good">1</td><td>1</td><td class="good">98.0</td></tr>
+<tr>
+<td rowspan="4">dotnet\CodeAnalyzer\RoslynMetricsCalculator.cs</td><td rowspan="4">92</td><td rowspan="4">74</td><td rowspan="4">15</td><td rowspan="4" class="good">75.6</td>
+<td>GetCyclomaticComplexity</td><td class="good">4</td><td>25</td><td class="good">68.8</td></tr>
+<tr>
+<td>IsLogicalBranch</td><td class="good">1</td><td>3</td><td class="good">90.1</td></tr>
+<tr>
+<td>GetMaintainabilityIndex</td><td class="good">2</td><td>5</td><td class="good">84.4</td></tr>
+<tr>
+<td>CountLines</td><td class="good">8</td><td>32</td><td class="warn">59.0</td></tr>
+</tbody></table>
+<h2>Code Duplication</h2>
+<table>
+<thead><tr><th>Hash</th><th>Occurrences</th><th>Locations</th></tr></thead>
+<tbody>
+<tr><td><code>07EFB1B1</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\CSharpAnalyzer.cs L8-15; .\dotnet\CodeAnalyzer\CSharpAnalyzer.cs L9-16</td></tr>
+<tr><td><code>1C767336</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\CSharpAnalyzer.cs L10-17; .\dotnet\CodeAnalyzer\CSharpAnalyzer.cs L11-18</td></tr>
+<tr><td><code>8C09F5B7</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\CSharpAnalyzer.cs L31-38; .\dotnet\CodeAnalyzer\CSharpAnalyzer.cs L32-39</td></tr>
+<tr><td><code>AB201346</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\CSharpAnalyzer.cs L53-60; .\dotnet\CodeAnalyzer\CSharpAnalyzer.cs L54-61</td></tr>
+<tr><td><code>B7857248</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\DuplicationDetector.cs L38-45; .\dotnet\CodeAnalyzer\DuplicationDetector.cs L39-46</td></tr>
+<tr><td><code>C60D10DF</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\DuplicationDetector.cs L41-48; .\dotnet\CodeAnalyzer\DuplicationDetector.cs L42-49</td></tr>
+<tr><td><code>08C0F57D</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\DuplicationDetector.cs L49-56; .\dotnet\CodeAnalyzer\DuplicationDetector.cs L102-109</td></tr>
+<tr><td><code>E5895FCA</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\DuplicationDetector.cs L64-71; .\dotnet\CodeAnalyzer\DuplicationDetector.cs L65-72</td></tr>
+<tr><td><code>02450CA7</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\DuplicationDetector.cs L67-74; .\dotnet\CodeAnalyzer\DuplicationDetector.cs L68-75</td></tr>
+<tr><td><code>5749FAD9</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\DuplicationDetector.cs L96-103; .\dotnet\CodeAnalyzer\DuplicationDetector.cs L97-104</td></tr>
+<tr><td><code>E569DA12</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\Models.cs L16-23; .\dotnet\CodeAnalyzer\Models.cs L17-24</td></tr>
+<tr><td><code>521B2D9D</code></td><td>3</td><td>.\dotnet\CodeAnalyzer\Models.cs L31-38; .\dotnet\CodeAnalyzer\Models.cs L32-39; .\dotnet\CodeAnalyzer\Models.cs L33-40</td></tr>
+<tr><td><code>C6FAA806</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\Models.cs L34-41; .\dotnet\CodeAnalyzer\Models.cs L35-42</td></tr>
+<tr><td><code>482FA3ED</code></td><td>3</td><td>.\dotnet\CodeAnalyzer\Models.cs L39-46; .\dotnet\CodeAnalyzer\Models.cs L40-47; .\dotnet\CodeAnalyzer\Models.cs L41-48</td></tr>
+<tr><td><code>07E583A6</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\Program.cs L4-11; .\dotnet\CodeAnalyzer\Program.cs L5-12</td></tr>
+<tr><td><code>E7CE1F68</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\Program.cs L6-13; .\dotnet\CodeAnalyzer\Program.cs L7-14</td></tr>
+<tr><td><code>02ADB5FE</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\Program.cs L8-15; .\dotnet\CodeAnalyzer\Program.cs L9-16</td></tr>
+<tr><td><code>14ACD00E</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\Program.cs L34-41; .\dotnet\CodeAnalyzer\Program.cs L35-42</td></tr>
+<tr><td><code>10B43046</code></td><td>3</td><td>.\dotnet\CodeAnalyzer\Program.cs L37-44; .\dotnet\CodeAnalyzer\Program.cs L38-45; .\dotnet\CodeAnalyzer\Program.cs L39-46</td></tr>
+<tr><td><code>D7F77BB1</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\Program.cs L60-67; .\dotnet\CodeAnalyzer\Program.cs L61-68</td></tr>
+<tr><td><code>085A7310</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\Program.cs L72-79; .\dotnet\CodeAnalyzer\Program.cs L73-80</td></tr>
+<tr><td><code>E1736B97</code></td><td>3</td><td>.\dotnet\CodeAnalyzer\Program.cs L80-87; .\dotnet\CodeAnalyzer\Program.cs L81-88; .\dotnet\CodeAnalyzer\Program.cs L82-89</td></tr>
+<tr><td><code>C9F20858</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\ReportGenerator.cs L4-11; .\dotnet\CodeAnalyzer\ReportGenerator.cs L5-12</td></tr>
+<tr><td><code>DEF70703</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\ReportGenerator.cs L6-13; .\dotnet\CodeAnalyzer\ReportGenerator.cs L7-14</td></tr>
+<tr><td><code>2401399C</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\ReportGenerator.cs L22-29; .\dotnet\CodeAnalyzer\ReportGenerator.cs L23-30</td></tr>
+<tr><td><code>DCEB1A4E</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\ReportGenerator.cs L79-86; .\dotnet\CodeAnalyzer\ReportGenerator.cs L80-87</td></tr>
+<tr><td><code>6C806D4D</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\ReportGenerator.cs L85-92; .\dotnet\CodeAnalyzer\ReportGenerator.cs L86-93</td></tr>
+<tr><td><code>6265ED59</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\ReportGenerator.cs L90-97; .\dotnet\CodeAnalyzer\ReportGenerator.cs L91-98</td></tr>
+<tr><td><code>B12CA8CA</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\ReportGenerator.cs L100-107; .\dotnet\CodeAnalyzer\ReportGenerator.cs L101-108</td></tr>
+<tr><td><code>55C8642D</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\ReportGenerator.cs L127-134; .\dotnet\CodeAnalyzer\ReportGenerator.cs L128-135</td></tr>
+<tr><td><code>D1753BD8</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\RoslynMetricsCalculator.cs L57-64; .\dotnet\CodeAnalyzer\RoslynMetricsCalculator.cs L58-65</td></tr>
+<tr><td><code>187075A0</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\RoslynMetricsCalculator.cs L59-66; .\dotnet\CodeAnalyzer\RoslynMetricsCalculator.cs L60-67</td></tr>
+<tr><td><code>2C075871</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\RoslynMetricsCalculator.cs L67-74; .\dotnet\CodeAnalyzer\RoslynMetricsCalculator.cs L68-75</td></tr>
+<tr><td><code>9EB63058</code></td><td>2</td><td>.\dotnet\CodeAnalyzer\RoslynMetricsCalculator.cs L75-82; .\dotnet\CodeAnalyzer\RoslynMetricsCalculator.cs L76-83</td></tr>
+</tbody></table>
+</body></html>

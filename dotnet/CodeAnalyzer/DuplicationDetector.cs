@@ -42,18 +42,19 @@ public static class DuplicationDetector
             if (occurrences.Count < MinDuplicateOccurrences) continue;
             var distinctFiles = occurrences.Select(o => o.file).Distinct().Count();
             if (distinctFiles < 2) continue; // same file only, skip or allow based on preference
-            duplicates.Add(new DuplicateBlock
+            var block = new DuplicateBlock
             {
                 NormalizedHash = hash,
-                TokenCount = occurrences.First().normalized.Length,
-                Occurrences = occurrences.Select(o => new DuplicateOccurrence
-                {
-                    FilePath = o.file,
-                    LineStart = o.start,
-                    LineEnd = o.end,
-                    Preview = o.preview
-                }).ToList()
-            });
+                TokenCount = occurrences.First().normalized.Length
+            };
+            block.Occurrences.AddRange(occurrences.Select(o => new DuplicateOccurrence
+            {
+                FilePath = o.file,
+                LineStart = o.start,
+                LineEnd = o.end,
+                Preview = o.preview
+            }));
+            duplicates.Add(block);
         }
         return duplicates;
     }
@@ -94,18 +95,19 @@ public static class DuplicationDetector
         foreach (var (hash, occurrences) in lineBlocksByHash)
         {
             if (occurrences.Count < MinDuplicateOccurrences) continue;
-            result.Add(new DuplicateBlock
+            var block = new DuplicateBlock
             {
                 NormalizedHash = hash,
-                TokenCount = blockSize,
-                Occurrences = occurrences.Select(o => new DuplicateOccurrence
-                {
-                    FilePath = o.file,
-                    LineStart = o.start,
-                    LineEnd = o.end,
-                    Preview = o.preview
-                }).ToList()
-            });
+                TokenCount = blockSize
+            };
+            block.Occurrences.AddRange(occurrences.Select(o => new DuplicateOccurrence
+            {
+                FilePath = o.file,
+                LineStart = o.start,
+                LineEnd = o.end,
+                Preview = o.preview
+            }));
+            result.Add(block);
         }
         return result;
     }

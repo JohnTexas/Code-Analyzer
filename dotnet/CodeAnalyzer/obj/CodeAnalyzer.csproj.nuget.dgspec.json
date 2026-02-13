@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/femiadigun/Documents/projects/tmp/code_analyzer/dotnet/CodeAnalyzer/CodeAnalyzer.csproj": {}
+    "C:\\Users\\wale_\\Documents\\projects\\Code-Analyzer\\dotnet\\CodeAnalyzer\\CodeAnalyzer.csproj": {}
   },
   "projects": {
-    "/Users/femiadigun/Documents/projects/tmp/code_analyzer/dotnet/CodeAnalyzer/CodeAnalyzer.csproj": {
+    "C:\\Users\\wale_\\Documents\\projects\\Code-Analyzer\\dotnet\\CodeAnalyzer\\CodeAnalyzer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/femiadigun/Documents/projects/tmp/code_analyzer/dotnet/CodeAnalyzer/CodeAnalyzer.csproj",
+        "projectUniqueName": "C:\\Users\\wale_\\Documents\\projects\\Code-Analyzer\\dotnet\\CodeAnalyzer\\CodeAnalyzer.csproj",
         "projectName": "code-analyzer",
-        "projectPath": "/Users/femiadigun/Documents/projects/tmp/code_analyzer/dotnet/CodeAnalyzer/CodeAnalyzer.csproj",
-        "packagesPath": "/var/folders/b2/t1859fws6v9gswmpfk62xfz40000gq/T/cursor-sandbox-cache/569b53130b471fca99acdb11c6f96e95/nuget",
-        "outputPath": "/Users/femiadigun/Documents/projects/tmp/code_analyzer/dotnet/CodeAnalyzer/obj/",
+        "projectPath": "C:\\Users\\wale_\\Documents\\projects\\Code-Analyzer\\dotnet\\CodeAnalyzer\\CodeAnalyzer.csproj",
+        "packagesPath": "C:\\Users\\wale_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wale_\\Documents\\projects\\Code-Analyzer\\dotnet\\CodeAnalyzer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/femiadigun/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\wale_\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -37,8 +37,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -60,26 +59,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.23, 8.0.23]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-arm64",
-              "version": "[8.0.23, 8.0.23]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.23, 8.0.23]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.418/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

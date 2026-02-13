@@ -1,6 +1,6 @@
 # Code Analyzer
 
-A **DevOps-friendly code quality tool** that scans Java and .NET source directories to compute **cyclomatic complexity**, **code duplication**, and **maintainability scores**, then outputs **HTML** or **CSV** reports. All analysis runs **locally** using [JavaParser](https://javaparser.org/) for Java and [Roslyn](https://github.com/dotnet/roslyn) for .NET.
+A **tool** that scans Java and .NET source directories to compute **cyclomatic complexity**, **code duplication**, and **maintainability scores**, then outputs **HTML** or **CSV** reports. All analysis runs **locally** using [JavaParser](https://javaparser.org/) for Java and [Roslyn](https://github.com/dotnet/roslyn) for .NET.
 
 Use it after training or refactors to assess and track code quality in ongoing projects.
 
@@ -116,6 +116,4 @@ You can then fail or warn the build when e.g. average maintainability drops belo
 
 ---
 
-## License
 
-Use and modify as needed for your organization.
